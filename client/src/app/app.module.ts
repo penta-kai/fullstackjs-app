@@ -21,10 +21,12 @@ import {HistoryPageComponent} from './history-page/history-page.component';
 import {OrderPageComponent} from './order-page/order-page.component';
 import {CategoriesPageComponent} from './categories-page/categories-page.component';
 import {CategoriesService} from "./shared/services/categories.service";
-import { LoaderComponent } from './shared/components/loader/loader.component';
-import { CategoriesFormComponent } from './categories-page/categories-form/categories-form.component';
-import { PositionsFormComponent } from './categories-page/categories-form/positions-form/positions-form.component';
+import {LoaderComponent} from './shared/components/loader/loader.component';
+import {CategoriesFormComponent} from './categories-page/categories-form/categories-form.component';
+import {PositionsFormComponent} from './categories-page/categories-form/positions-form/positions-form.component';
 import {PositionsService} from "./shared/services/positions.service";
+import {OrderCategoriesComponent} from './order-page/order-categories/order-categories.component';
+import {OrderPositionsComponent} from './order-page/order-positions/order-positions.component';
 
 
 @NgModule({
@@ -41,7 +43,9 @@ import {PositionsService} from "./shared/services/positions.service";
         CategoriesPageComponent,
         LoaderComponent,
         CategoriesFormComponent,
-        PositionsFormComponent
+        PositionsFormComponent,
+        OrderCategoriesComponent,
+        OrderPositionsComponent
     ],
     imports: [
         BrowserModule,
